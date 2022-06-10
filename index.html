@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/2293037ed9.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(26, 26, 26);
+      color: aliceblue;
+    }
+
+    .nav-item {
+      background-color: #FFEA00;
+      color: black;
+      border-radius: 15px;
+      margin-right: 10px;
+    }
+
+    .navbar {
+      background-color: rgb(26, 26, 26);
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    /* привіт :) */
+    .navbar-nav {
+      padding-left: 10px;
+    }
+
+    .logo {
+      width: 65px;
+    }
+
+    .txt-logo {
+      color: white;
+      text-align: center;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .block1 {
+      /* width: 160px; */
+      height: 160px;
+      padding-left: 30px;
+      background-color: rgba(24, 24, 24, 0.444);
+      margin: 3px;
+      /* margin-top: 150px; */
+      /* margin-left: 150px; */
+      padding: 10px;
+      border-radius: 25px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+
+    .block2 {
+      /* width: 160px; */
+      /* height: 160px; */
+      padding-left: 30px;
+      background-color: rgba(24, 24, 24, 0.444);
+      margin: 3px;
+      /* margin-top: 150px; */
+      /* margin-left: 250px; */
+      padding: 10px;
+      border-radius: 25px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .block1>p {
+      text-align: center;
+      margin: auto;
+    }
+
+    .block2>p {
+      text-align: center;
+    }
+
+    .text2 {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      color: #fff;
+      /* padding-top: 150px; */
+      padding-left: 5px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .text-1 {
+      justify-content: center;
+      justify-items: center;
+      color: rgb(255, 255, 255);
+      /* padding-top: 150px; */
+      padding-left: 5px;
+      background-color: rgba(45, 45, 45, 0.526);
+      border-radius: 30px;
+      padding: 4px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* .text-1 > h1 { */
+    /* border: 2px solid black; */
+    /* } */
+
+    .scene-1 {
+      background-image: url(img/hd-wallpaper-1838782_1920_L.jpg);
+      height: 500px;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .scene2 {
+
+      display: flex;
+      background-image: url(img/holidays.jpg);
+      height: 500px;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-attachment: fixed;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      justify-content: space-around !important;
+      align-items: center;
+    }
+
+    .my-card {
+      box-sizing: border-box;
+      margin: 20px;
+      padding: 30px;
+      border: 3px inset gray;
+      border-radius: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .my-card>img {
+      width: 100%;
+      padding: 4px;
+      border-bottom: 2px inset gray;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer {
+      background-color: rgba(45, 45, 45, 0.526);
+      padding-top: 80px;
+      padding-bottom: 80px;
+      padding-left: 20px;
+    }
+
+    footer .text {
+      color: gray;
+      padding-top: 20px;
+      font-family: 'Montserrat', sans-serif;
+      /* text-align: right; */
+    }
+
+    footer .bold {
+      font-weight: bolder;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    footer .sized {
+      font-size: large;
+      padding-left: 6px;
+    }
+
+    a>.button {
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      right: 40px;
+      bottom: 40px;
+      opacity: 70%;
+    }
+
+    a>.button>i {
+      font-size: 50px;
+      color: #FFEA00;
+    }
+
+    .navbar-toggler {
+      background-color: #fff;
+    }
+
+    .nav-link {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      text-align: center;
+    }
+
+    .connect {
+      align-items: center;
+      background-color: rgb(30, 30, 30);
+    }
+
+    .connect>.connect-p>p {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bolder;
+      font-size: large;
+    }
+
+    .connect-p {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .scene3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .socio-item {
+      font-size: 2.3rem;
+      font-family: 'Montserrat', sans-serif;
+      color: lightgray;
+      text-decoration: none;
+      transition: 0.5s;
+      margin-right: 10px;
+    }
+
+    .socio-item:hover {
+      color: rgb(251, 194, 8);
+      text-shadow: 0px 0px 7px white;
+    }
+  </style>
+  <title>AUTO.CARPOV | OFFICCIAL</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="img/test logo 1.png" alt="car"></a>
+      <p class="txt-logo">CARPOV <br> <span class="red">AUTO</span> </p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="tell:+380123456789">подзвонити (для смартфона)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:masionismihail1@gmail.com">написати на пошту</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid scene-1">
+    <div class="scene-1 row">
+      <div class="col-md-6  justify-content-center text-shadow-0px-0px-100px-black">
+        <div class="block1">
+          <h1>перевізка та покупка авто</h1>
+        </div>
+      </div>
+
+      <div class="col-md-6 justify-content-center">
+        <div class="block1">
+          <p>наш сервіс пропонує вам, покупку а також перевізку авто з ЄС в Україну</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <a href="#phone">
+    <div class="button">
+      <i class="fa-solid fa-phone"></i>
+    </div>
+  </a>
+
+  <div class="container-fluid scene2">
+    <div class="row scene2 ">
+      <div class="col-lg-3 col-md-6 block2">
+        <p>також ми можемо розмитнити машину та перетнути нею кордон для Вашої зручності</p>
+      </div>
+      <div class="col-lg-3 col-md-6 text2">
+        <h1>розмитнення</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container scene3">
+    <h1>чому саме ми?</h1>
+  </div>
+  <div class="container">
+    <div class="row cards">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="my-card">
+          <img src="img/cyber.png" alt="">
+          <p>безпека</p>
+          <p>займаємось ще з 2017 <br> відповідальність до клієнтів</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="my-card">
+          <img src="img/coffee.jpg" alt="">
+          <p>зручність</p>
+          <p>ми ведемо відбір авто по<br>Европі, США, україні </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="my-card">
+          <img src="img/motorcycle.jpg" alt="">
+          <p>Вигода</p>
+          <p>ми також пропонуємо вам продажу\викуп ВАШОГО авто</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid  connect">
+    <div class="connect-p">
+      <p>Зв'яжіться зі мною:</p>
+      <p>Телефонуйте: +380123456789</p>
+      <p>Напишіть на почту: yourmail@gmail.com</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center" >
+          <div class="socio-menu">
+            <a class="socio-item" href="https://www.instagram.com/auto.karpov/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="text ">
+            <p class="bold" id="phone">+380 (50) 507 39 71</p>
+            <p class="bold" id="phone">+380 (98) 056 40 98</p>
+            <p class="sized">Руслан Цирюк</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+пайдьот?)
+ОГО фокуси))))) нічо собі, даж і не зна шо так можна було))) дуууууууже дякую!
+нема за що)
+Я нічого не помогла, ти сам все робив)
+але ви ж поредактували, то допомоили)
+закидати як знаєш?
+ дя)
+ создам собі новий акк для бізнеса нашого брата, передам йому вже зробляний і викинутий на гітхаб, а рекламу пототм розберемся як оплатить)
+ ще в гугл консоль зареєструвати треба
+ ти маєш ще ожну я щас
